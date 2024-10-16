@@ -1,0 +1,31 @@
+.menu-container-before {
+    content: "";
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-22vw) translateX(4vw) rotate(-15deg);
+    border-radius: 45px 55px;
+    background: white;
+    height: 80vw;
+    width: 110vw;
+    z-index: -1;
+}
+
+.menu-container-before .lang .flex {
+    transform: rotate(15deg);
+}
+
+@media screen and (min-width:420px) {
+    .menu-container-before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(max(-10vh,-20vw)) translateX(4vw) rotate(-10deg);
+        border-radius: 45px 45px;
+        background: white;
+        height: 80vw;
+        width: 100vw;
+        z-index: -1;
+    }
+}
